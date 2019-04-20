@@ -1,0 +1,7 @@
+.App {
+  text-align: center;
+
+  & > div.main{
+    width: calc(100% - 400px);
+  }
+}
