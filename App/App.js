@@ -7,7 +7,7 @@ export default class App extends React.Component {
     return (
       <SafeAreaView style={{flex: 1}}>
         <View style={{flex: 1, margin: 0, padding: 0}}>
-          <WebView useWebKit={true} source={{url: 'https://www.google.com'}} style={{flex: 1}}/>
+          <WebView useWebKit={true} source={{url: 'http://dimiwords.tk:39991/#/'}} style={{flex: 1}}/>
         </View>
       </SafeAreaView>
     );
