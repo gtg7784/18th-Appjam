@@ -8,6 +8,17 @@ const alert = [
   "비가 내리고  있어요, 습도에 주의하세요"
 ]
 
+const list = [
+  {
+    name: "훈민정음 해례본",
+    contents: "현재 배OO씨가 소유 중인 훈민정음 해례본"
+  },
+  {
+    name: "금동미륵보살반가사유상",
+    contents: "현재 삼성에서 소유 중인 국보 제118호"
+  }
+]
+
 class Home extends Component {
   render() {
     return (
@@ -47,7 +58,18 @@ class Home extends Component {
             <div>NAME</div>
             <div>CONTENTS</div>
             <div>SEARCH</div>
-          </div>
+          </div>{
+            list.map((list) => {
+              return(
+                <div>
+                  <div>{list.name}</div>
+                  <div>{list.contents}</div>
+                  <div>
+                    <button>SEARCH</button>
+                  </div>
+                </div>
+              )
+            })}
         </div>
       </div>
     );
