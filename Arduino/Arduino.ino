@@ -1,7 +1,26 @@
+#include <ESP8266WIFI.h>
+#include <DHT.h>;
+#include <MQ2.h>
+#include <SoftwareSerial.h>
+
 const char *ssid = "iphone";
 const char *password = "1234567890";
 
 const char* host = "dimiwords.tk:30001";
+
+int lpg, co, smoke;
+
+#define DHTPIN 7
+#define DHTTYPE DHT22
+DHT dht(DHTPIN, DHTTYPE);
+
+int chk;
+float hum;
+float temp;
+
+SoftwareSerial HM10(13,12); // RX, TX
+
+#define LEDPIN 6
 
 void setup (){
     Serial.begin(115200);
@@ -19,9 +38,23 @@ void setup (){
     
     Serial.println("IP address: ");
     Serial.println(WiFi.localIP());
+    
+    
+    mq2.begin()
+
+    dht.begin();
+
+    HM10.begin(9600);
+
+    pinMode(LEDPIN, OUTPUT);
 }
 void loop(){
     wificonnect();
+
+    mq2sensing();
+
+    dhtsensing();
+
 
 }
 
@@ -51,4 +84,31 @@ void wificonnect(){
         String line = client.readStringUntil('\r');
         Serial.print(line);
     }
+}
+
+int mq2sensing(){
+    float* values= mq2.read(true); //set it false if you don't want to print the values in the Serial
+    //lpg = values[0];
+    lpg = mq2.readLPG();
+    //co = values[1];
+    co = mq2.readCO();
+    //smoke = values[2];
+    smoke = mq2.readSmoke();
+    delay(1000);
+
+    return (lpg, co, smoke);
+}
+
+int dhtsensing(){
+    delay(2000);
+    hum = dht.readHumidity();
+    temp= dht.readTemperature();
+
+    return (hum, temp);
+}
+
+int beacon(){
+  if (HM10.available()){
+      return HM10.read();
+  }
 }
