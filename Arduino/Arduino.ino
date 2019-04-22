@@ -87,7 +87,7 @@ void wificonnect(){
 }
 
 int mq2sensing(){
-    float* values= mq2.read(true); //set it false if you don't want to print the values in the Serial
+    float* values= mq2.read(true);
     //lpg = values[0];
     lpg = mq2.readLPG();
     //co = values[1];
