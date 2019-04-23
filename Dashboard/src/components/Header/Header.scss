@@ -24,13 +24,13 @@
                 background-color: $headerHover;
             }
             display: flex;
-            justify-content: space-between;
-            padding-left: 150px;
+            justify-content: center;
             align-items: center;
             height: 80px;
             text-decoration: none;
 
             & > li{
+                max-width: 150px;
                 color: $headerColor;
                 text-align: center;
                 align-items: center;
