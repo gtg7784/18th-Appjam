@@ -1,7 +1,8 @@
 @import '../../styles/_colors.scss';
 
 .Header{
-    width: 400px;
+    width: 350px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;

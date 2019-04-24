@@ -14,25 +14,25 @@ class Header extends Component {
         <h1>CUBE</h1>
 
         <ul>
-            <Link>
+            <Link to='/'>
                 <li>
                     <img src={ic_home} alt="Home"/>
                     Home
                 </li>
             </Link>
-            <Link>
+            <Link to='/alert'>
                 <li>
                     <img src={ic_alert} alt="ALERT"/>
                     ALERT
                 </li>
             </Link>
-            <Link>
+            <Link to='/helps'>
                 <li>
                     <img src={ic_helps} alt="HELPS"/>
                     HELPS
                 </li>
             </Link>
-            <Link>
+            <Link to='/settings'>
                 <li>
                     <img src={ic_settings} alt="SETTINGS"/>
                     SETTINGS

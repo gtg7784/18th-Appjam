@@ -1,0 +1,48 @@
+@import '../../styles/colors.scss';
+
+.Alert{
+    width: calc(100% - 450px);
+    background-color: $mainBack;
+    
+    & > h1{
+        font-size: 24pt;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+
+        & > span{
+            font-size: 14pt;
+            margin-top: 20px;
+            color: $subTitle;
+        }
+    }
+
+    & > div{
+        display: flex;
+        flex-flow: row wrap;
+        & > div{
+            align-items: center;
+            width: calc(50% - 80px);
+            padding: 20px;
+            margin: 20px;
+
+            & > h2{
+                display: flex;
+                justify-content: space-between;
+                color: #fff;
+                font-size: 14pt;
+                margin: 0 0 20px 0;
+    
+                & > img{
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            & > span{
+                color: #fff;
+            }
+        }
+    }
+    padding: 50px;
+}

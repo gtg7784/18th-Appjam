@@ -1,4 +1,16 @@
+@import '../styles/colors';
+
 .App {
   display: flex;
   flex-direction: row;
+}
+
+.rainy{
+  background-color: $alertRainy;
+}
+.dust{
+  background-color: $alertDust;
+}
+.temp{
+  background-color: $alertTemp;
 }

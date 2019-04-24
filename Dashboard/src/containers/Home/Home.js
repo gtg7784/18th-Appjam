@@ -4,8 +4,18 @@ import ic_cancel from '../../asset/ic_cancel.svg';
 import './Home.scss';
 
 const alert = [
-  "비가 내리고  있어요, 습도에 주의하세요.",
-  "비가 내리고  있어요, 습도에 주의하세요"
+  {
+    contents: "비가 내리고  있어요, 습도에 주의하세요.",
+    type: "rainy"
+  },
+  {
+    contents: "미세먼지가 심한 날이에요, 먼지에 주의하세요.",
+    type: "dust"
+  },
+  {
+    contents: "더운 날이에요, 온도에 주의하세요.",
+    type: "temp"
+  },
 ]
 
 const list = [
@@ -41,10 +51,10 @@ class Home extends Component {
               <h2>FINE DUST</h2>
             </div>
             <div>
-              {alert.map((contents) => {
+              {alert.map((item) => {
                 return(
-                  <div>
-                    {contents}
+                  <div className={item.type}>
+                    {item.contents}
                     <img src={ic_cancel} alt="cancel"/>
                   </div>
                 )

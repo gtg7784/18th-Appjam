@@ -5,6 +5,9 @@ import './App.scss';
 
 import Header from '../components/Header/Header'
 import Home from './Home/Home'
+import Alert from './Alert/Alert'
+import Helps from './Helps/Helps'
+import Settings from './Settings/Settings'
 
 class App extends Component {
   render() {
@@ -13,6 +16,9 @@ class App extends Component {
         <Header/>
         <Switch>
           <Route path="/" exact component={Home}/>
+          <Route path="/alert" exact component={Alert}/>
+          <Route path="/helps" exact component={Helps}/>
+          <Route path="/settings" exact component={Settings}/>
         </Switch>
       </div>
     );
