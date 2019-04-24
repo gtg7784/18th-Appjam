@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.scss';
 
-import ic_alert from '../../asset/ic_alert.svg'
-import ic_helps from '../../asset/ic_helps.svg'
-import ic_home from '../../asset/ic_home.svg'
-import ic_settings from '../../asset/ic_settings.svg'
+import ic_alert from '../../asset/image/ic_alert.svg'
+import ic_helps from '../../asset/image/ic_helps.svg'
+import ic_home from '../../asset/image/ic_home.svg'
+import ic_settings from '../../asset/image/ic_settings.svg'
 
 class Header extends Component {
   render() {

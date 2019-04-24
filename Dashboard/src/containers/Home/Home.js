@@ -1,33 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import ic_cancel from '../../asset/ic_cancel.svg';
+import ic_cancel from '../../asset/image/ic_cancel.svg';
 import './Home.scss';
 
-const alert = [
-  {
-    contents: "비가 내리고  있어요, 습도에 주의하세요.",
-    type: "rainy"
-  },
-  {
-    contents: "미세먼지가 심한 날이에요, 먼지에 주의하세요.",
-    type: "dust"
-  },
-  {
-    contents: "더운 날이에요, 온도에 주의하세요.",
-    type: "temp"
-  },
-]
-
-const list = [
-  {
-    name: "훈민정음 해례본",
-    contents: "현재 배OO씨가 소유 중인 훈민정음 해례본"
-  },
-  {
-    name: "금동미륵보살반가사유상",
-    contents: "현재 삼성에서 소유 중인 국보 제118호"
-  }
-]
+import alert from '../../asset/db/alert.json'
+import list from '../../asset/db/list.json'
 
 class Home extends Component {
   render() {
@@ -53,10 +31,10 @@ class Home extends Component {
             <div>
               {alert.map((item) => {
                 return(
-                  <div className={item.type}>
-                    {item.contents}
+                  <Link to="/alert" className={item.type}>
+                    {item.title}
                     <img src={ic_cancel} alt="cancel"/>
-                  </div>
+                  </Link>
                 )
               })}
             </div>
