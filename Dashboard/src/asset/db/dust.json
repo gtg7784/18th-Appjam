@@ -1,1 +1,26 @@
-[ 32, 33, 48, 70, 62, 60, 79, 89, 70, 47, 56 ]
+{
+    "labels": [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+    "datasets": [
+      {
+        "label": "DUST",
+        "fill": false,
+        "lineTension": 0.1,
+        "backgroundColor": "rgba(203, 194, 176, 0.4)",
+        "borderColor": "rgba(203, 194, 176, 1)",
+        "borderCapStyle": "butt",
+        "borderDash": [],
+        "borderDashOffset": 0.0,
+        "borderJoinStyle": "miter",
+        "pointBorderColor": "rgba(203, 194, 176, 1)",
+        "pointBackgroundColor": "#fff",
+        "pointBorderWidth": 1,
+        "pointHoverRadius": 5,
+        "pointHoverBackgroundColor": "rgba(203, 194, 176, 1)",
+        "pointHoverBorderColor": "rgba(203, 194, 176, 1)",
+        "pointHoverBorderWidth": 2,
+        "pointRadius": 1,
+        "pointHitRadius": 10,
+        "data": [ 32, 33, 48, 70, 62, 60, 79, 89, 70, 47, 56 ]
+      }
+    ]
+}

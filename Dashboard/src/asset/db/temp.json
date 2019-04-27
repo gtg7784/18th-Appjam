@@ -1,1 +1,26 @@
-[ 21, 17, 11.5, 13.5, 13.5, 15.5, 17, 16.5, 15.5, 16.5 ]
+{
+    "labels": [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+    "datasets": [
+      {
+        "label": "TEMPERATURE",
+        "fill": false,
+        "lineTension": 0.1,
+        "backgroundColor": "rgba(231, 76, 60, 0.4)",
+        "borderColor": "rgba(231, 76, 60, 1)",
+        "borderCapStyle": "butt",
+        "borderDash": [],
+        "borderDashOffset": 0.0,
+        "borderJoinStyle": "miter",
+        "pointBorderColor": "rgba(231, 76, 60, 1)",
+        "pointBackgroundColor": "#fff",
+        "pointBorderWidth": 1,
+        "pointHoverRadius": 5,
+        "pointHoverBackgroundColor": "rgba(231, 76, 60, 1)",
+        "pointHoverBorderColor": "rgba(231, 76, 60, 1)",
+        "pointHoverBorderWidth": 2,
+        "pointRadius": 1,
+        "pointHitRadius": 10,
+        "data": [ 21, 17, 11.5, 13.5, 13.5, 15.5, 17, 16.5, 15.5, 16.5 ]
+      }
+    ]
+  }
