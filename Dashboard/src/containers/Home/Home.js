@@ -11,13 +11,11 @@ import dust from '../../asset/db/dust.json'
 import humid from '../../asset/db/humid.json'
 import temp from '../../asset/db/temp.json'
 
-
 const options = {
   legend: {
       display: false,
   },
 }
-
 
 class Home extends Component {
   render() {
